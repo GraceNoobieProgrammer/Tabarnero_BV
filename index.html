@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE="edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet"href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+<!--home-->
+</head>
+<body>
+    <div class="banner">
+
+        <div class="navbar">
+            <div class="logo">DEATHNOTE</div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">TESTIMONY</a></li>                
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>DEATH NOTE</h1>
+            <p>Send a full name and picture to KIRA</p>
+
+            <div class="button">
+                <button type = "button"><span></span>READ MORE</button>
+                <button type = "button"><span></span>SEND NAMES</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+<!--news-->
+<div class="blog-section">
+
+  <div class="section-content">
+  
+    <div class="title">
+      <h2> Death Note </h2>
+      <p> News articles </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+
+          <div class="image-section">
+            <img src="img/mineship.jpg">
+          </div>
+
+            <div class="article">
+              <h4> NEW SHIP ON BOARD: LAWMANE </h4>
+              <p> L Lawliet, also known as L, is spotted eating a cake with Misa Amane!</br> </br>
+
+                  As we all know L doesn't have a love interest towards any character,
+                  but it seems like he showed a rare scene with Misa Amane...</p>
+            </div>
+
+            <div class="blog-view">
+              <a href=""class="button"> Read More </a>
+            </div>
+
+            <div class="posted-date">
+              <p>Date Posted: July 23, 2022</p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="image-section">
+              <img src="img/Rem.jpg">
+            </div>
+
+          <div class="article">
+            <h4> Shinigami's Death </h4>
+            <p> Do you know the way to kill a god of death? </br> </br>
+
+              Rem witnessed the death of a fellow Shinigami after falling in love with a human...</p>
+          </div>
+
+          <div class="blog-view">
+            <a href="" class="button"> Read More </a>
+          </div>
+
+          <div class="posted-date">
+            <p>Date Posted: April 2, 2023</p>
+          </div>
+        </div>
+                                  
+          <div class="card">
+            <div class="image-section">
+              <img src="img/Lcake.jpg">
+            </div>
+
+            <div class="article">
+              <h4> L Celebrates 25th Birthday </h4>
+              <p> Supposedly a happy birthday </br> </br>
+
+              If Rem only did let L lived, he would be singing a happy birthday to L, instead turning into dust... </p>
+            </div>
+
+            <div class="blog-view">
+              <a href="" class="button"> Ready More</a>
+            </div>
+
+            <div class="posted-date">
+            <p>Date Posted: July 20, 2023</p>
+            </div>
+          </div>
+     </div>
+  </div>
+</div>
+
+
+
+  <!--about us-->
+ 
+  <div class = "about-section">
+    <div class="heading">
+      <h1> About Us</h1>
+      <p> All about Death Note </p>
+   
+
+    <div class="container">
+
+      <section class="about">
+        <div class="about-image">
+          <img src="img/cooldeathnote.jpg">
+        </div>
+
+        <div class="about-content">
+          <h2> Death Note - Fan Website </h2>
+          <p>
+              Welcome to our fan website dedicated to the captivating world of "Death Note"!
+            If you're a devoted fan of this renowned anime series, you've come to the right place.
+            Here, we celebrate the intriguing tale of Light Yagami, a brilliant high school student
+            who stumbles upon a mysterious notebook with otherworldly powers—the Death Note.
+            As you immerse yourself in the gripping storyline, you'll witness the relentless pursuit
+            between Light and the enigmatic detective known only as "L." Our website is a treasure
+            trove of exclusive content, including character analyses, episode reviews, fan art, and
+            thrilling fanfiction that explores alternative scenarios and unexpected relationships.
+            Whether you're a seasoned "Death Note" enthusiast or a newcomer curious to unravel the
+            mysteries of this extraordinary anime, we invite you to join our community and indulge
+            in the intellectual and emotional rollercoaster that is "Death Note"! </p>
+
+          <a href="0" class="read-more">Read More</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<!--Gallery Page-->
+
+<div class = "gallery" id="gallery">
+  <div class = "sakupa">
+  <input type="radio" name="photos" id="check1" checked>
+  <input type="radio" name="photos" id="check2" checked>
+  <input type="radio" name="photos" id="check3" checked>
+  <input type="radio" name="photos" id="check4" checked>
+
+  <div class = "gallery-container">
+    <h1> PHOTOGALLERY </h1>
+      <div class = "top-content">
+        <h3>Photo Gallery</h3>
+        <label for="check1">All Photos</label>
+        <label for="check2">L</label>
+        <label for="check3">Light</label>
+        <label for="check4">Misa</label>
+      </div>
+
+      <div class="photo-gallery">
+
+        <div class="pic L  ">
+          <img src="img/HotL.jpg">
+        </div>
+
+        <div class="pic Light ">
+          <img src="img/hotLight.jpg">
+        </div>
+
+        <div class="pic Misa">
+          <img src="img/Misacute.jpg">
+        </div>
+
+        <div class="pic L ">
+          <img src="img/LL.jpg">
+        </div>
+
+        <div class="pic Light  ">
+          <img src="img/hottieLight.jpg">
+        </div>
+
+        <div class="pic Misa">
+          <img src="img/misainred.jpg">
+        </div>
+
+        <div class="pic L  ">
+          <img src="img/thumbL.jpg">
+        </div>
+
+        <div class="pic Light  ">
+          <img src="img/normalLight.jpg">
+        </div>
+
+        <div class="pic Misa">
+          <img src="img/misaskull.jpg">
+        </div>
+
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<!--Testimony-->
+<div class = "testimonysakup">
+<div class = "testimonyheader">
+  <h1>TESTIMONY</h1>
+  <P>Witness the Greatness of Villainess and Goodness of Death Note Characters</P>
+</div>
+
+<div class="row">
+
+  <div class="testimony1">
+    <h2>@LurkingintheLight</h2>
+    <h3>Light Yagami</h3>
+
+    <p>At first glance, Light appears to be an ordinary and virtuous young man,
+      driven by a desire to rid the world of criminals and create a utopia. 
+      However, his transformation into a cold, calculating, and manipulative individual
+      is a masterclass in character development. As he adopts the alter ego "Kira"
+      and establishes himself as a divine punisher, his god complex emerges,
+      leading him to believe that he alone can cleanse society of its evils.</p>
+        
+  </div>
+
+  <div class="testimony2">
+    <h2>@LLLoveL</h2>
+    <h3>L Lawliet</h3>
+  
+    <p>Light's intelligence and cunning make him an exceptional anti-hero,
+      constantly outwitting those who oppose him, most notably the enigmatic detective known only as "L."
+      His strategic mind games and meticulous planning keep viewers captivated,
+      leaving us in awe of his intellect and forethought.
+    </p>
+
+   </div>
+
+  
+  <div class="testimony3">
+    <h2>@MisaMisaCutie</h2>
+    <h3>Misa Amane</h3>
+
+    <p>Misa Amane's character is a compelling portrayal of a woman torn between love
+      and her desire for justice, making her a memorable and divisive figure in "Death Note."
+      Her journey throughout the series serves as a poignant reminder of the human heart's complexity
+      and the lengths one may go to protect those they hold dear.
+    </p>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
